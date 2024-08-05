@@ -1,4 +1,4 @@
-NAME = steam-search
+NAME = google-rofi
 
 
 .venv/bin/activate: requirements.txt
