@@ -4,11 +4,15 @@
 #
 #    pip-compile requirements.in
 #
-pycrc==0.10.0
-    # via steam-client
+certifi==2024.7.4
+    # via requests
+charset-normalizer==3.3.2
+    # via requests
+idna==3.7
+    # via requests
+requests==2.32.3
+    # via -r requirements.in
 rofi-menu==0.6
     # via -r requirements.in
-steam-client==2.0.1.dev0
-    # via -r requirements.in
-vdf==3.4
-    # via steam-client
+urllib3==2.2.2
+    # via requests
