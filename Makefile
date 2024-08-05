@@ -40,10 +40,10 @@ clean: uninstall
 	rm -rf .venv
 
 .PHONY: update
-update:
-	pip-compile --upgrade requirements.in
+update: .venv/bin/activate
+	./.venv/bin/pip-compile --upgrade requirements.in
 
 .PHONY: update-dev
-update-dev:
-	pip-compile --upgrade requirements-dev.in
+update-dev: .venv/bin/activate
+	./.venv/bin/pip-compile --upgrade requirements-dev.in
 
